@@ -1,0 +1,316 @@
+
+> data-glove-web-frontend@1.0.0 dev
+> vite
+
+Port 3000 is in use, trying another one...
+
+  VITE v4.5.14  ready in 304 ms
+
+  ➜  Local:   http://localhost:3001/
+  ➜  Network: http://192.168.0.100:3001/
+Error:   Failed to scan for dependencies from entries:
+  /Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/index.html
+
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mENOENT: no such file or directory, open '/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/src/views/data/SensorData.vue'[0m [1m[35m[plugin vite:dep-scan][0m
+
+    node_modules/esbuild/lib/main.js:1434:21:
+[37m      1434 │         let result = [32m[37mawait callback({
+           ╵                      [32m^[0m
+
+    at async open (node:internal/fs/promises:640:25)
+    at async Object.readFile (node:internal/fs/promises:1277:14)
+    at async file:///Users/xiang/Documents/%E9%BB%84%E6%B5%A6%E5%9F%8E%E9%A1%B9%E7%9B%AE/%E5%89%8D%E5%90%8E%E7%AB%AF/ex_No1/data-glove-web/frontend/node_modules/vite/dist/node/chunks/dep-827b23df.js:44658:27
+    at async requestCallbacks.on-load (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:1434:22)
+    at async handleRequest (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:729:13)
+
+  This error came from the "onLoad" callback registered here:
+
+    node_modules/esbuild/lib/main.js:1292:20:
+[37m      1292 │       let promise = [32m[37msetup({
+           ╵                     [32m^[0m
+
+    at setup (file:///Users/xiang/Documents/%E9%BB%84%E6%B5%A6%E5%9F%8E%E9%A1%B9%E7%9B%AE/%E5%89%8D%E5%90%8E%E7%AB%AF/ex_No1/data-glove-web/frontend/node_modules/vite/dist/node/chunks/dep-827b23df.js:44657:19)
+    at handlePlugins (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:1292:21)
+    at buildOrContextImpl (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:978:5)
+    at Object.buildOrContext (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:786:5)
+    at /Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:2186:68
+    at new Promise (<anonymous>)
+    at Object.context (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:2186:27)
+    at Object.context (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:2026:58)
+    at prepareEsbuildScanner (file:///Users/xiang/Documents/%E9%BB%84%E6%B5%A6%E5%9F%8E%E9%A1%B9%E7%9B%AE/%E5%89%8D%E5%90%8E%E7%AB%AF/ex_No1/data-glove-web/frontend/node_modules/vite/dist/node/chunks/dep-827b23df.js:44535:26)
+
+  The plugin "vite:dep-scan" was triggered by this import
+
+    src/router/index.ts:123:32:
+[37m      123 │         component: () => import([32m'@/views/data/SensorData.vue'[37m),
+          ╵                                 [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mENOENT: no such file or directory, open '/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/src/views/device/List.vue'[0m [1m[35m[plugin vite:dep-scan][0m
+
+    node_modules/esbuild/lib/main.js:1434:21:
+[37m      1434 │         let result = [32m[37mawait callback({
+           ╵                      [32m^[0m
+
+    at async open (node:internal/fs/promises:640:25)
+    at async Object.readFile (node:internal/fs/promises:1277:14)
+    at async file:///Users/xiang/Documents/%E9%BB%84%E6%B5%A6%E5%9F%8E%E9%A1%B9%E7%9B%AE/%E5%89%8D%E5%90%8E%E7%AB%AF/ex_No1/data-glove-web/frontend/node_modules/vite/dist/node/chunks/dep-827b23df.js:44658:27
+    at async requestCallbacks.on-load (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:1434:22)
+    at async handleRequest (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:729:13)
+
+  This error came from the "onLoad" callback registered here:
+
+    node_modules/esbuild/lib/main.js:1292:20:
+[37m      1292 │       let promise = [32m[37msetup({
+           ╵                     [32m^[0m
+
+    at setup (file:///Users/xiang/Documents/%E9%BB%84%E6%B5%A6%E5%9F%8E%E9%A1%B9%E7%9B%AE/%E5%89%8D%E5%90%8E%E7%AB%AF/ex_No1/data-glove-web/frontend/node_modules/vite/dist/node/chunks/dep-827b23df.js:44657:19)
+    at handlePlugins (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:1292:21)
+    at buildOrContextImpl (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:978:5)
+    at Object.buildOrContext (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:786:5)
+    at /Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:2186:68
+    at new Promise (<anonymous>)
+    at Object.context (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:2186:27)
+    at Object.context (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:2026:58)
+    at prepareEsbuildScanner (file:///Users/xiang/Documents/%E9%BB%84%E6%B5%A6%E5%9F%8E%E9%A1%B9%E7%9B%AE/%E5%89%8D%E5%90%8E%E7%AB%AF/ex_No1/data-glove-web/frontend/node_modules/vite/dist/node/chunks/dep-827b23df.js:44535:26)
+
+  The plugin "vite:dep-scan" was triggered by this import
+
+    src/router/index.ts:94:32:
+[37m      94 │         component: () => import([32m'@/views/device/List.vue'[37m),
+         ╵                                 [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mENOENT: no such file or directory, open '/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/src/views/device/MyDevices.vue'[0m [1m[35m[plugin vite:dep-scan][0m
+
+    node_modules/esbuild/lib/main.js:1434:21:
+[37m      1434 │         let result = [32m[37mawait callback({
+           ╵                      [32m^[0m
+
+    at async open (node:internal/fs/promises:640:25)
+    at async Object.readFile (node:internal/fs/promises:1277:14)
+    at async file:///Users/xiang/Documents/%E9%BB%84%E6%B5%A6%E5%9F%8E%E9%A1%B9%E7%9B%AE/%E5%89%8D%E5%90%8E%E7%AB%AF/ex_No1/data-glove-web/frontend/node_modules/vite/dist/node/chunks/dep-827b23df.js:44658:27
+    at async requestCallbacks.on-load (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:1434:22)
+    at async handleRequest (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:729:13)
+
+  This error came from the "onLoad" callback registered here:
+
+    node_modules/esbuild/lib/main.js:1292:20:
+[37m      1292 │       let promise = [32m[37msetup({
+           ╵                     [32m^[0m
+
+    at setup (file:///Users/xiang/Documents/%E9%BB%84%E6%B5%A6%E5%9F%8E%E9%A1%B9%E7%9B%AE/%E5%89%8D%E5%90%8E%E7%AB%AF/ex_No1/data-glove-web/frontend/node_modules/vite/dist/node/chunks/dep-827b23df.js:44657:19)
+    at handlePlugins (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:1292:21)
+    at buildOrContextImpl (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:978:5)
+    at Object.buildOrContext (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:786:5)
+    at /Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:2186:68
+    at new Promise (<anonymous>)
+    at Object.context (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:2186:27)
+    at Object.context (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:2026:58)
+    at prepareEsbuildScanner (file:///Users/xiang/Documents/%E9%BB%84%E6%B5%A6%E5%9F%8E%E9%A1%B9%E7%9B%AE/%E5%89%8D%E5%90%8E%E7%AB%AF/ex_No1/data-glove-web/frontend/node_modules/vite/dist/node/chunks/dep-827b23df.js:44535:26)
+
+  The plugin "vite:dep-scan" was triggered by this import
+
+    src/router/index.ts:103:32:
+[37m      103 │         component: () => import([32m'@/views/device/MyDevices.vue'[37m),
+          ╵                                 [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mENOENT: no such file or directory, open '/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/src/views/profile/index.vue'[0m [1m[35m[plugin vite:dep-scan][0m
+
+    node_modules/esbuild/lib/main.js:1434:21:
+[37m      1434 │         let result = [32m[37mawait callback({
+           ╵                      [32m^[0m
+
+    at async open (node:internal/fs/promises:640:25)
+    at async Object.readFile (node:internal/fs/promises:1277:14)
+    at async file:///Users/xiang/Documents/%E9%BB%84%E6%B5%A6%E5%9F%8E%E9%A1%B9%E7%9B%AE/%E5%89%8D%E5%90%8E%E7%AB%AF/ex_No1/data-glove-web/frontend/node_modules/vite/dist/node/chunks/dep-827b23df.js:44658:27
+    at async requestCallbacks.on-load (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:1434:22)
+    at async handleRequest (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:729:13)
+
+  This error came from the "onLoad" callback registered here:
+
+    node_modules/esbuild/lib/main.js:1292:20:
+[37m      1292 │       let promise = [32m[37msetup({
+           ╵                     [32m^[0m
+
+    at setup (file:///Users/xiang/Documents/%E9%BB%84%E6%B5%A6%E5%9F%8E%E9%A1%B9%E7%9B%AE/%E5%89%8D%E5%90%8E%E7%AB%AF/ex_No1/data-glove-web/frontend/node_modules/vite/dist/node/chunks/dep-827b23df.js:44657:19)
+    at handlePlugins (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:1292:21)
+    at buildOrContextImpl (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:978:5)
+    at Object.buildOrContext (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:786:5)
+    at /Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:2186:68
+    at new Promise (<anonymous>)
+    at Object.context (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:2186:27)
+    at Object.context (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:2026:58)
+    at prepareEsbuildScanner (file:///Users/xiang/Documents/%E9%BB%84%E6%B5%A6%E5%9F%8E%E9%A1%B9%E7%9B%AE/%E5%89%8D%E5%90%8E%E7%AB%AF/ex_No1/data-glove-web/frontend/node_modules/vite/dist/node/chunks/dep-827b23df.js:44535:26)
+
+  The plugin "vite:dep-scan" was triggered by this import
+
+    src/router/index.ts:43:32:
+[37m      43 │         component: () => import([32m'@/views/profile/index.vue'[37m),
+         ╵                                 [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mENOENT: no such file or directory, open '/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/src/views/user/List.vue'[0m [1m[35m[plugin vite:dep-scan][0m
+
+    node_modules/esbuild/lib/main.js:1434:21:
+[37m      1434 │         let result = [32m[37mawait callback({
+           ╵                      [32m^[0m
+
+    at async open (node:internal/fs/promises:640:25)
+    at async Object.readFile (node:internal/fs/promises:1277:14)
+    at async file:///Users/xiang/Documents/%E9%BB%84%E6%B5%A6%E5%9F%8E%E9%A1%B9%E7%9B%AE/%E5%89%8D%E5%90%8E%E7%AB%AF/ex_No1/data-glove-web/frontend/node_modules/vite/dist/node/chunks/dep-827b23df.js:44658:27
+    at async requestCallbacks.on-load (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:1434:22)
+    at async handleRequest (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:729:13)
+
+  This error came from the "onLoad" callback registered here:
+
+    node_modules/esbuild/lib/main.js:1292:20:
+[37m      1292 │       let promise = [32m[37msetup({
+           ╵                     [32m^[0m
+
+    at setup (file:///Users/xiang/Documents/%E9%BB%84%E6%B5%A6%E5%9F%8E%E9%A1%B9%E7%9B%AE/%E5%89%8D%E5%90%8E%E7%AB%AF/ex_No1/data-glove-web/frontend/node_modules/vite/dist/node/chunks/dep-827b23df.js:44657:19)
+    at handlePlugins (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:1292:21)
+    at buildOrContextImpl (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:978:5)
+    at Object.buildOrContext (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:786:5)
+    at /Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:2186:68
+    at new Promise (<anonymous>)
+    at Object.context (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:2186:27)
+    at Object.context (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:2026:58)
+    at prepareEsbuildScanner (file:///Users/xiang/Documents/%E9%BB%84%E6%B5%A6%E5%9F%8E%E9%A1%B9%E7%9B%AE/%E5%89%8D%E5%90%8E%E7%AB%AF/ex_No1/data-glove-web/frontend/node_modules/vite/dist/node/chunks/dep-827b23df.js:44535:26)
+
+  The plugin "vite:dep-scan" was triggered by this import
+
+    src/router/index.ts:65:32:
+[37m      65 │         component: () => import([32m'@/views/user/List.vue'[37m),
+         ╵                                 [32m~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+    at failureErrorWithLog (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:1649:15)
+    at /Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:1058:25
+    at runOnEndCallbacks (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:1484:45)
+    at buildResponseToResult (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:1056:7)
+    at /Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:1068:9
+    at new Promise (<anonymous>)
+    at requestCallbacks.on-end (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:1067:54)
+    at handleRequest (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:729:19)
+    at handleIncomingPacket (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:755:7)
+    at Socket.readFromStdout (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/frontend/node_modules/esbuild/lib/main.js:679:7)
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+(node:5309) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+21:56:17 [vite] ✨ new dependencies optimized: echarts
+21:56:17 [vite] ✨ optimized dependencies changed. reloading
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  11:31:31 [vite] ✨ new dependencies optimized: echarts
+11:31:31 [vite] ✨ optimized dependencies changed. reloading
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+

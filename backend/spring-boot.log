@@ -1,0 +1,6241 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.dataglove:data-glove-web >--------------------
+[INFO] Building data-glove-web 1.0.0
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:3.2.0:run (default-cli) > test-compile @ data-glove-web >>>
+[WARNING] The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ data-glove-web ---
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:compile (default-compile) @ data-glove-web ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ data-glove-web ---
+[INFO] skip non existing resourceDirectory /Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/backend/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:testCompile (default-testCompile) @ data-glove-web ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:3.2.0:run (default-cli) < test-compile @ data-glove-web <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:3.2.0:run (default-cli) @ data-glove-web ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m              [2m (v3.2.0)[0;39m
+
+2025-07-11 21:46:10 - Starting DataGloveWebApplication using Java 23.0.2 with PID 4670 (/Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/backend/target/classes started by xiang in /Users/xiang/Documents/黄浦城项目/前后端/ex_No1/data-glove-web/backend)
+2025-07-11 21:46:10 - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-07-11 21:46:10 - The following 1 profile is active: "dev"
+2025-07-11 21:46:10 - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-11 21:46:10 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-11 21:46:10 - Finished Spring Data repository scanning in 71 ms. Found 7 JPA repository interfaces.
+2025-07-11 21:46:10 - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-11 21:46:10 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-11 21:46:10 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dataglove.web.repository.DeviceRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-11 21:46:10 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dataglove.web.repository.GestureResultRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-11 21:46:10 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dataglove.web.repository.LearningRecordRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-11 21:46:10 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dataglove.web.repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-11 21:46:10 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dataglove.web.repository.SensorDataRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-11 21:46:10 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dataglove.web.repository.UserDeviceRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-11 21:46:10 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dataglove.web.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-11 21:46:10 - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-07-11 21:46:10 - Tomcat initialized with port 8080 (http)
+2025-07-11 21:46:10 - Starting service [Tomcat]
+2025-07-11 21:46:10 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-07-11 21:46:10 - Initializing Spring embedded WebApplicationContext
+2025-07-11 21:46:10 - Root WebApplicationContext: initialization completed in 721 ms
+2025-07-11 21:46:10 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-11 21:46:10 - HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-07-11 21:46:10 - HHH000026: Second-level cache disabled
+2025-07-11 21:46:11 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-11 21:46:11 - HikariPool-1 - Starting...
+2025-07-11 21:46:11 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6bfdaa7a
+2025-07-11 21:46:11 - HikariPool-1 - Start completed.
+2025-07-11 21:46:11 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-11 21:46:11 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-07-11 21:46:11 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-11 21:46:11 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-11 21:46:12 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-11 21:46:12 - Filter 'jwtAuthenticationFilter' configured for use
+2025-07-11 21:46:12 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-11 21:46:12 - 54 mappings in 'requestMappingHandlerMapping'
+2025-07-11 21:46:12 - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-07-11 21:46:12 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5b60accd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3b2b9b96, org.springframework.security.web.context.SecurityContextHolderFilter@22b9f45f, org.springframework.security.web.header.HeaderWriterFilter@58b53c53, org.springframework.web.filter.CorsFilter@5078c8f6, org.springframework.security.web.authentication.logout.LogoutFilter@752daa1f, com.dataglove.web.security.JwtAuthenticationFilter@26aecf31, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4f7bc46e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@18161415, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@36d9efa6, org.springframework.security.web.session.SessionManagementFilter@52421f92, org.springframework.security.web.access.ExceptionTranslationFilter@156290d9, org.springframework.security.web.access.intercept.AuthorizationFilter@70921720]
+2025-07-11 21:46:12 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-07-11 21:46:12 - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-07-11 21:46:13 - Tomcat started on port 8080 (http) with context path '/api'
+2025-07-11 21:46:13 - Started DataGloveWebApplication in 3.091 seconds (process running for 3.24)
+2025-07-11 21:46:39 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-11 21:46:39 - Initializing Servlet 'dispatcherServlet'
+2025-07-11 21:46:39 - Detected StandardServletMultipartResolver
+2025-07-11 21:46:39 - Detected AcceptHeaderLocaleResolver
+2025-07-11 21:46:39 - Detected FixedThemeResolver
+2025-07-11 21:46:39 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@69e67993
+2025-07-11 21:46:39 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@1926a40f
+2025-07-11 21:46:39 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-11 21:46:39 - Completed initialization in 3 ms
+2025-07-11 21:46:39 - Securing POST /v1/auth/login
+2025-07-11 21:46:39 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-11 21:46:39 - Cache miss for REQUEST dispatch to '/api/v1/auth/login' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2025-07-11 21:46:39 - Secured POST /v1/auth/login
+2025-07-11 21:46:39 - POST "/api/v1/auth/login", parameters={}
+2025-07-11 21:46:39 - Mapped to com.dataglove.web.controller.AuthController#login(LoginRequest)
+2025-07-11 21:46:39 - Read "application/json;charset=UTF-8" to [com.dataglove.web.dto.LoginRequest@2596acb7]
+2025-07-11 21:46:40 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 21:46:40 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-11 21:46:40 - Authenticated user
+2025-07-11 21:46:40 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 21:46:40 - 
+    update
+        users 
+    set
+        avatar_url=?,
+        email=?,
+        last_login_at=?,
+        password_hash=?,
+        phone=?,
+        real_name=?,
+        status=?,
+        updated_at=?,
+        username=? 
+    where
+        id=?
+Hibernate: 
+    update
+        users 
+    set
+        avatar_url=?,
+        email=?,
+        last_login_at=?,
+        password_hash=?,
+        phone=?,
+        real_name=?,
+        status=?,
+        updated_at=?,
+        username=? 
+    where
+        id=?
+2025-07-11 21:46:40 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-07-11 21:46:40 - Writing [com.dataglove.web.common.ApiResponse@5463f88f]
+2025-07-11 21:46:40 - Completed 200 OK
+2025-07-11 21:48:15 - Securing POST /v1/auth/login
+2025-07-11 21:48:15 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-11 21:48:15 - Secured POST /v1/auth/login
+2025-07-11 21:48:15 - POST "/api/v1/auth/login", parameters={}
+2025-07-11 21:48:15 - Mapped to com.dataglove.web.controller.AuthController#login(LoginRequest)
+2025-07-11 21:48:15 - Read "application/json;charset=UTF-8" to [com.dataglove.web.dto.LoginRequest@27105e6]
+2025-07-11 21:48:16 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 21:48:16 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-11 21:48:16 - Failed to authenticate since password does not match stored value
+2025-07-11 21:48:17 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-11 21:48:17 - Writing [com.dataglove.web.common.ApiResponse@42591c3b]
+2025-07-11 21:48:17 - Completed 200 OK
+2025-07-11 21:48:33 - Securing GET /v1/users
+2025-07-11 21:48:34 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 21:48:34 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-11 21:48:34 - Secured GET /v1/users
+2025-07-11 21:48:34 - GET "/api/v1/users", parameters={}
+2025-07-11 21:48:34 - Mapped to com.dataglove.web.controller.UserController#getUsers(int, int, String, UserStatus, String, String)
+2025-07-11 21:48:34 - Authorizing method invocation ReflectiveMethodInvocation: public com.dataglove.web.common.ApiResponse com.dataglove.web.controller.UserController.getUsers(int,int,java.lang.String,com.dataglove.web.entity.User$UserStatus,java.lang.String,java.lang.String); target is of class [com.dataglove.web.controller.UserController]
+2025-07-11 21:48:34 - Authorized method invocation ReflectiveMethodInvocation: public com.dataglove.web.common.ApiResponse com.dataglove.web.controller.UserController.getUsers(int,int,java.lang.String,com.dataglove.web.entity.User$UserStatus,java.lang.String,java.lang.String); target is of class [com.dataglove.web.controller.UserController]
+2025-07-11 21:48:34 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    order by
+        u1_0.created_at desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    order by
+        u1_0.created_at desc 
+    limit
+        ?, ?
+2025-07-11 21:48:34 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-11 21:48:34 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-07-11 21:48:34 - Writing [com.dataglove.web.common.ApiResponse@6f28f66]
+2025-07-11 21:48:34 - Completed 200 OK
+2025-07-11 21:49:07 - Securing POST /v1/auth/login
+2025-07-11 21:49:07 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-11 21:49:07 - Secured POST /v1/auth/login
+2025-07-11 21:49:07 - POST "/api/v1/auth/login", parameters={}
+2025-07-11 21:49:07 - Mapped to com.dataglove.web.controller.AuthController#login(LoginRequest)
+2025-07-11 21:49:07 - Read "application/json;charset=UTF-8" to [com.dataglove.web.dto.LoginRequest@663852b8]
+2025-07-11 21:49:08 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 21:49:08 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-11 21:49:08 - Authenticated user
+2025-07-11 21:49:08 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 21:49:08 - 
+    update
+        users 
+    set
+        avatar_url=?,
+        email=?,
+        last_login_at=?,
+        password_hash=?,
+        phone=?,
+        real_name=?,
+        status=?,
+        updated_at=?,
+        username=? 
+    where
+        id=?
+Hibernate: 
+    update
+        users 
+    set
+        avatar_url=?,
+        email=?,
+        last_login_at=?,
+        password_hash=?,
+        phone=?,
+        real_name=?,
+        status=?,
+        updated_at=?,
+        username=? 
+    where
+        id=?
+2025-07-11 21:49:08 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-11 21:49:08 - Writing [com.dataglove.web.common.ApiResponse@258d687c]
+2025-07-11 21:49:08 - Completed 200 OK
+2025-07-11 21:49:12 - Securing POST /v1/auth/login
+2025-07-11 21:49:12 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 21:49:12 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-11 21:49:12 - Secured POST /v1/auth/login
+2025-07-11 21:49:12 - POST "/api/v1/auth/login", parameters={}
+2025-07-11 21:49:12 - Mapped to com.dataglove.web.controller.AuthController#login(LoginRequest)
+2025-07-11 21:49:12 - Read "application/json;charset=UTF-8" to [com.dataglove.web.dto.LoginRequest@419455aa]
+2025-07-11 21:49:12 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 21:49:12 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-11 21:49:12 - Authenticated user
+2025-07-11 21:49:12 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 21:49:12 - 
+    update
+        users 
+    set
+        avatar_url=?,
+        email=?,
+        last_login_at=?,
+        password_hash=?,
+        phone=?,
+        real_name=?,
+        status=?,
+        updated_at=?,
+        username=? 
+    where
+        id=?
+Hibernate: 
+    update
+        users 
+    set
+        avatar_url=?,
+        email=?,
+        last_login_at=?,
+        password_hash=?,
+        phone=?,
+        real_name=?,
+        status=?,
+        updated_at=?,
+        username=? 
+    where
+        id=?
+2025-07-11 21:49:12 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-11 21:49:12 - Writing [com.dataglove.web.common.ApiResponse@44cafd2d]
+2025-07-11 21:49:12 - Completed 200 OK
+2025-07-11 21:49:16 - Securing POST /v1/auth/login
+2025-07-11 21:49:16 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 21:49:16 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-11 21:49:16 - Secured POST /v1/auth/login
+2025-07-11 21:49:16 - POST "/api/v1/auth/login", parameters={}
+2025-07-11 21:49:16 - Mapped to com.dataglove.web.controller.AuthController#login(LoginRequest)
+2025-07-11 21:49:16 - Read "application/json;charset=UTF-8" to [com.dataglove.web.dto.LoginRequest@3d71341c]
+2025-07-11 21:49:16 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 21:49:16 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-11 21:49:16 - Authenticated user
+2025-07-11 21:49:16 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 21:49:16 - 
+    update
+        users 
+    set
+        avatar_url=?,
+        email=?,
+        last_login_at=?,
+        password_hash=?,
+        phone=?,
+        real_name=?,
+        status=?,
+        updated_at=?,
+        username=? 
+    where
+        id=?
+Hibernate: 
+    update
+        users 
+    set
+        avatar_url=?,
+        email=?,
+        last_login_at=?,
+        password_hash=?,
+        phone=?,
+        real_name=?,
+        status=?,
+        updated_at=?,
+        username=? 
+    where
+        id=?
+2025-07-11 21:49:16 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-11 21:49:16 - Writing [com.dataglove.web.common.ApiResponse@72c2ec4]
+2025-07-11 21:49:16 - Completed 200 OK
+2025-07-11 21:49:32 - Securing GET /v1/auth/me
+2025-07-11 21:49:34 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 21:49:36 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-11 21:49:37 - Secured GET /v1/auth/me
+2025-07-11 21:49:37 - GET "/api/v1/auth/me", parameters={}
+2025-07-11 21:49:37 - Mapped to com.dataglove.web.controller.AuthController#getCurrentUser(UserPrincipal)
+2025-07-11 21:49:37 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-11 21:49:37 - Writing [com.dataglove.web.common.ApiResponse@3a5afd9f]
+2025-07-11 21:49:37 - Completed 200 OK
+2025-07-11 21:49:45 - Securing GET /v1/auth/me
+2025-07-11 21:49:45 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 21:49:45 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-11 21:49:45 - Secured GET /v1/auth/me
+2025-07-11 21:49:45 - GET "/api/v1/auth/me", parameters={}
+2025-07-11 21:49:45 - Mapped to com.dataglove.web.controller.AuthController#getCurrentUser(UserPrincipal)
+2025-07-11 21:49:45 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-11 21:49:45 - Writing [com.dataglove.web.common.ApiResponse@3b952357]
+2025-07-11 21:49:45 - Completed 200 OK
+2025-07-11 21:50:00 - Securing GET /v1/auth/me
+2025-07-11 21:50:02 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 21:50:02 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-11 21:50:02 - Secured GET /v1/auth/me
+2025-07-11 21:50:02 - GET "/api/v1/auth/me", parameters={}
+2025-07-11 21:50:02 - Mapped to com.dataglove.web.controller.AuthController#getCurrentUser(UserPrincipal)
+2025-07-11 21:50:02 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-11 21:50:02 - Writing [com.dataglove.web.common.ApiResponse@154bc6c0]
+2025-07-11 21:50:02 - Completed 200 OK
+2025-07-11 21:50:10 - Securing GET /v1/auth/me
+2025-07-11 21:50:10 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 21:50:10 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-11 21:50:10 - Secured GET /v1/auth/me
+2025-07-11 21:50:10 - GET "/api/v1/auth/me", parameters={}
+2025-07-11 21:50:10 - Mapped to com.dataglove.web.controller.AuthController#getCurrentUser(UserPrincipal)
+2025-07-11 21:50:10 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-11 21:50:10 - Writing [com.dataglove.web.common.ApiResponse@57d11926]
+2025-07-11 21:50:10 - Completed 200 OK
+2025-07-11 21:50:56 - Securing POST /v1/auth/login
+2025-07-11 21:50:56 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-11 21:50:56 - Secured POST /v1/auth/login
+2025-07-11 21:50:56 - POST "/api/v1/auth/login", parameters={}
+2025-07-11 21:50:56 - Mapped to com.dataglove.web.controller.AuthController#login(LoginRequest)
+2025-07-11 21:50:56 - Read "application/json;charset=UTF-8" to [com.dataglove.web.dto.LoginRequest@1f78b8f2]
+2025-07-11 21:50:56 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 21:50:56 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-11 21:50:56 - Authenticated user
+2025-07-11 21:50:56 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 21:50:56 - 
+    update
+        users 
+    set
+        avatar_url=?,
+        email=?,
+        last_login_at=?,
+        password_hash=?,
+        phone=?,
+        real_name=?,
+        status=?,
+        updated_at=?,
+        username=? 
+    where
+        id=?
+Hibernate: 
+    update
+        users 
+    set
+        avatar_url=?,
+        email=?,
+        last_login_at=?,
+        password_hash=?,
+        phone=?,
+        real_name=?,
+        status=?,
+        updated_at=?,
+        username=? 
+    where
+        id=?
+2025-07-11 21:50:56 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-11 21:50:56 - Writing [com.dataglove.web.common.ApiResponse@7304e367]
+2025-07-11 21:50:56 - Completed 200 OK
+2025-07-11 21:52:25 - Securing GET /
+2025-07-11 21:52:25 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-11 21:52:26 - Pre-authenticated entry point called. Rejecting access
+2025-07-11 21:52:26 - Securing GET /error
+2025-07-11 21:52:26 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-11 21:52:26 - Pre-authenticated entry point called. Rejecting access
+2025-07-11 21:53:47 - Securing POST /v1/auth/login
+2025-07-11 21:53:47 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 21:53:48 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-11 21:53:48 - Secured POST /v1/auth/login
+2025-07-11 21:53:48 - POST "/api/v1/auth/login", parameters={}
+2025-07-11 21:53:48 - Mapped to com.dataglove.web.controller.AuthController#login(LoginRequest)
+2025-07-11 21:53:48 - Read "application/json;charset=UTF-8" to [com.dataglove.web.dto.LoginRequest@4929bebf]
+2025-07-11 21:53:48 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 21:53:48 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-11 21:53:48 - Authenticated user
+2025-07-11 21:53:48 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 21:53:48 - 
+    update
+        users 
+    set
+        avatar_url=?,
+        email=?,
+        last_login_at=?,
+        password_hash=?,
+        phone=?,
+        real_name=?,
+        status=?,
+        updated_at=?,
+        username=? 
+    where
+        id=?
+Hibernate: 
+    update
+        users 
+    set
+        avatar_url=?,
+        email=?,
+        last_login_at=?,
+        password_hash=?,
+        phone=?,
+        real_name=?,
+        status=?,
+        updated_at=?,
+        username=? 
+    where
+        id=?
+2025-07-11 21:53:48 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-11 21:53:48 - Writing [com.dataglove.web.common.ApiResponse@6bcd39fc]
+2025-07-11 21:53:48 - Completed 200 OK
+2025-07-11 21:56:16 - Securing GET /v1/auth/me
+2025-07-11 21:56:17 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 21:56:17 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-11 21:56:17 - Secured GET /v1/auth/me
+2025-07-11 21:56:17 - GET "/api/v1/auth/me", parameters={}
+2025-07-11 21:56:17 - Mapped to com.dataglove.web.controller.AuthController#getCurrentUser(UserPrincipal)
+2025-07-11 21:56:17 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-11 21:56:17 - Writing [com.dataglove.web.common.ApiResponse@5ac63b68]
+2025-07-11 21:56:17 - Completed 200 OK
+2025-07-11 21:56:18 - Securing GET /v1/auth/me
+2025-07-11 21:56:18 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 21:56:18 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-11 21:56:18 - Secured GET /v1/auth/me
+2025-07-11 21:56:18 - GET "/api/v1/auth/me", parameters={}
+2025-07-11 21:56:18 - Mapped to com.dataglove.web.controller.AuthController#getCurrentUser(UserPrincipal)
+2025-07-11 21:56:18 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-11 21:56:18 - Writing [com.dataglove.web.common.ApiResponse@7b3b4362]
+2025-07-11 21:56:18 - Completed 200 OK
+2025-07-11 21:56:18 - Securing GET /v1/data/statistics/my
+2025-07-11 21:56:18 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 21:56:18 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-11 21:56:18 - Secured GET /v1/data/statistics/my
+2025-07-11 21:56:18 - GET "/api/v1/data/statistics/my", parameters={}
+2025-07-11 21:56:18 - Mapped to com.dataglove.web.controller.DataController#getMyDataStatistics(UserPrincipal)
+2025-07-11 21:56:18 - 
+    select
+        count(sd1_0.id) 
+    from
+        sensor_data sd1_0 
+    where
+        sd1_0.user_id=?
+Hibernate: 
+    select
+        count(sd1_0.id) 
+    from
+        sensor_data sd1_0 
+    where
+        sd1_0.user_id=?
+2025-07-11 21:56:19 - 
+    select
+        count(gr1_0.id) 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=?
+Hibernate: 
+    select
+        count(gr1_0.id) 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=?
+2025-07-11 21:56:19 - 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-11 21:56:19 - 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-11 21:56:19 - 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-11 21:56:19 - 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-11 21:56:19 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-11 21:56:19 - Writing [com.dataglove.web.common.ApiResponse@1f356cc4]
+2025-07-11 21:56:19 - Completed 200 OK
+2025-07-11 21:56:19 - Securing GET /v1/data/gesture-results/recent?limit=5
+2025-07-11 21:56:19 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 21:56:19 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-11 21:56:19 - Secured GET /v1/data/gesture-results/recent?limit=5
+2025-07-11 21:56:19 - GET "/api/v1/data/gesture-results/recent?limit=5", parameters={masked}
+2025-07-11 21:56:19 - Mapped to com.dataglove.web.controller.DataController#getRecentGestureResults(int, UserPrincipal)
+2025-07-11 21:56:19 - 
+    select
+        gr1_0.id,
+        gr1_0.confidence,
+        gr1_0.created_at,
+        gr1_0.device_id,
+        gr1_0.gesture_name,
+        gr1_0.processed_data,
+        gr1_0.raw_data,
+        gr1_0.recognition_time,
+        gr1_0.updated_at,
+        gr1_0.user_id 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=? 
+    order by
+        gr1_0.recognition_time desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        gr1_0.id,
+        gr1_0.confidence,
+        gr1_0.created_at,
+        gr1_0.device_id,
+        gr1_0.gesture_name,
+        gr1_0.processed_data,
+        gr1_0.raw_data,
+        gr1_0.recognition_time,
+        gr1_0.updated_at,
+        gr1_0.user_id 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=? 
+    order by
+        gr1_0.recognition_time desc 
+    limit
+        ?, ?
+2025-07-11 21:56:19 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-11 21:56:19 - Writing [com.dataglove.web.common.ApiResponse@4f9422c]
+2025-07-11 21:56:19 - Completed 200 OK
+2025-07-11 21:56:19 - Securing GET /v1/devices/my-devices
+2025-07-11 21:56:19 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 21:56:19 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-11 21:56:19 - Secured GET /v1/devices/my-devices
+2025-07-11 21:56:19 - GET "/api/v1/devices/my-devices", parameters={}
+2025-07-11 21:56:19 - Mapped to com.dataglove.web.controller.DeviceController#getMyDevices(UserPrincipal)
+2025-07-11 21:56:19 - 
+    select
+        ud1_0.id,
+        ud1_0.bind_time,
+        ud1_0.created_at,
+        ud1_0.device_id,
+        ud1_0.is_active,
+        ud1_0.unbind_time,
+        ud1_0.updated_at,
+        ud1_0.user_id 
+    from
+        user_devices ud1_0 
+    where
+        ud1_0.user_id=? 
+        and ud1_0.is_active=1
+Hibernate: 
+    select
+        ud1_0.id,
+        ud1_0.bind_time,
+        ud1_0.created_at,
+        ud1_0.device_id,
+        ud1_0.is_active,
+        ud1_0.unbind_time,
+        ud1_0.updated_at,
+        ud1_0.user_id 
+    from
+        user_devices ud1_0 
+    where
+        ud1_0.user_id=? 
+        and ud1_0.is_active=1
+2025-07-11 21:56:19 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-11 21:56:19 - Writing [com.dataglove.web.common.ApiResponse@6dfd352d]
+2025-07-11 21:56:19 - Completed 200 OK
+2025-07-11 22:01:00 - Securing POST /v1/auth/logout
+2025-07-11 22:01:01 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 22:01:01 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-11 22:01:01 - Secured POST /v1/auth/logout
+2025-07-11 22:01:01 - POST "/api/v1/auth/logout", parameters={}
+2025-07-11 22:01:01 - Mapped to com.dataglove.web.controller.AuthController#logout()
+2025-07-11 22:01:01 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-11 22:01:01 - Writing [com.dataglove.web.common.ApiResponse@4a73ea7e]
+2025-07-11 22:01:01 - Completed 200 OK
+2025-07-11 22:01:13 - Securing POST /v1/auth/login
+2025-07-11 22:01:13 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-11 22:01:13 - Secured POST /v1/auth/login
+2025-07-11 22:01:13 - POST "/api/v1/auth/login", parameters={}
+2025-07-11 22:01:13 - Mapped to com.dataglove.web.controller.AuthController#login(LoginRequest)
+2025-07-11 22:01:13 - Read "application/json;charset=UTF-8" to [com.dataglove.web.dto.LoginRequest@35ef145f]
+2025-07-11 22:01:13 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 22:01:13 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-11 22:01:13 - Authenticated user
+2025-07-11 22:01:13 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 22:01:13 - 
+    update
+        users 
+    set
+        avatar_url=?,
+        email=?,
+        last_login_at=?,
+        password_hash=?,
+        phone=?,
+        real_name=?,
+        status=?,
+        updated_at=?,
+        username=? 
+    where
+        id=?
+Hibernate: 
+    update
+        users 
+    set
+        avatar_url=?,
+        email=?,
+        last_login_at=?,
+        password_hash=?,
+        phone=?,
+        real_name=?,
+        status=?,
+        updated_at=?,
+        username=? 
+    where
+        id=?
+2025-07-11 22:01:13 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-11 22:01:13 - Writing [com.dataglove.web.common.ApiResponse@6e167d10]
+2025-07-11 22:01:13 - Completed 200 OK
+2025-07-11 22:01:13 - Securing GET /v1/data/statistics/my
+2025-07-11 22:01:13 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 22:01:13 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-11 22:01:13 - Secured GET /v1/data/statistics/my
+2025-07-11 22:01:13 - GET "/api/v1/data/statistics/my", parameters={}
+2025-07-11 22:01:13 - Mapped to com.dataglove.web.controller.DataController#getMyDataStatistics(UserPrincipal)
+2025-07-11 22:01:13 - 
+    select
+        count(sd1_0.id) 
+    from
+        sensor_data sd1_0 
+    where
+        sd1_0.user_id=?
+Hibernate: 
+    select
+        count(sd1_0.id) 
+    from
+        sensor_data sd1_0 
+    where
+        sd1_0.user_id=?
+2025-07-11 22:01:13 - 
+    select
+        count(gr1_0.id) 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=?
+Hibernate: 
+    select
+        count(gr1_0.id) 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=?
+2025-07-11 22:01:13 - 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-11 22:01:13 - 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-11 22:01:13 - 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-11 22:01:13 - 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-11 22:01:13 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-11 22:01:13 - Writing [com.dataglove.web.common.ApiResponse@1e1f4687]
+2025-07-11 22:01:13 - Completed 200 OK
+2025-07-11 22:01:13 - Securing GET /v1/data/gesture-results/recent?limit=5
+2025-07-11 22:01:13 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 22:01:13 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-11 22:01:13 - Secured GET /v1/data/gesture-results/recent?limit=5
+2025-07-11 22:01:13 - GET "/api/v1/data/gesture-results/recent?limit=5", parameters={masked}
+2025-07-11 22:01:13 - Mapped to com.dataglove.web.controller.DataController#getRecentGestureResults(int, UserPrincipal)
+2025-07-11 22:01:13 - 
+    select
+        gr1_0.id,
+        gr1_0.confidence,
+        gr1_0.created_at,
+        gr1_0.device_id,
+        gr1_0.gesture_name,
+        gr1_0.processed_data,
+        gr1_0.raw_data,
+        gr1_0.recognition_time,
+        gr1_0.updated_at,
+        gr1_0.user_id 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=? 
+    order by
+        gr1_0.recognition_time desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        gr1_0.id,
+        gr1_0.confidence,
+        gr1_0.created_at,
+        gr1_0.device_id,
+        gr1_0.gesture_name,
+        gr1_0.processed_data,
+        gr1_0.raw_data,
+        gr1_0.recognition_time,
+        gr1_0.updated_at,
+        gr1_0.user_id 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=? 
+    order by
+        gr1_0.recognition_time desc 
+    limit
+        ?, ?
+2025-07-11 22:01:13 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-11 22:01:13 - Writing [com.dataglove.web.common.ApiResponse@55d47435]
+2025-07-11 22:01:13 - Completed 200 OK
+2025-07-11 22:01:13 - Securing GET /v1/devices/my-devices
+2025-07-11 22:01:13 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 22:01:13 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-11 22:01:13 - Secured GET /v1/devices/my-devices
+2025-07-11 22:01:13 - GET "/api/v1/devices/my-devices", parameters={}
+2025-07-11 22:01:13 - Mapped to com.dataglove.web.controller.DeviceController#getMyDevices(UserPrincipal)
+2025-07-11 22:01:13 - 
+    select
+        ud1_0.id,
+        ud1_0.bind_time,
+        ud1_0.created_at,
+        ud1_0.device_id,
+        ud1_0.is_active,
+        ud1_0.unbind_time,
+        ud1_0.updated_at,
+        ud1_0.user_id 
+    from
+        user_devices ud1_0 
+    where
+        ud1_0.user_id=? 
+        and ud1_0.is_active=1
+Hibernate: 
+    select
+        ud1_0.id,
+        ud1_0.bind_time,
+        ud1_0.created_at,
+        ud1_0.device_id,
+        ud1_0.is_active,
+        ud1_0.unbind_time,
+        ud1_0.updated_at,
+        ud1_0.user_id 
+    from
+        user_devices ud1_0 
+    where
+        ud1_0.user_id=? 
+        and ud1_0.is_active=1
+2025-07-11 22:01:13 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-11 22:01:13 - Writing [com.dataglove.web.common.ApiResponse@7609cd68]
+2025-07-11 22:01:13 - Completed 200 OK
+2025-07-11 23:10:23 - Securing GET /v1/auth/me
+2025-07-11 23:10:24 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 23:10:24 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-11 23:10:24 - Secured GET /v1/auth/me
+2025-07-11 23:10:24 - GET "/api/v1/auth/me", parameters={}
+2025-07-11 23:10:24 - Mapped to com.dataglove.web.controller.AuthController#getCurrentUser(UserPrincipal)
+2025-07-11 23:10:24 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-11 23:10:24 - Writing [com.dataglove.web.common.ApiResponse@6e88bc47]
+2025-07-11 23:10:24 - Completed 200 OK
+2025-07-11 23:12:26 - Securing GET /v1/data/statistics/my
+2025-07-11 23:12:26 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 23:12:26 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-11 23:12:26 - Secured GET /v1/data/statistics/my
+2025-07-11 23:12:26 - GET "/api/v1/data/statistics/my", parameters={}
+2025-07-11 23:12:26 - Mapped to com.dataglove.web.controller.DataController#getMyDataStatistics(UserPrincipal)
+2025-07-11 23:12:26 - 
+    select
+        count(sd1_0.id) 
+    from
+        sensor_data sd1_0 
+    where
+        sd1_0.user_id=?
+Hibernate: 
+    select
+        count(sd1_0.id) 
+    from
+        sensor_data sd1_0 
+    where
+        sd1_0.user_id=?
+2025-07-11 23:12:26 - 
+    select
+        count(gr1_0.id) 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=?
+Hibernate: 
+    select
+        count(gr1_0.id) 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=?
+2025-07-11 23:12:26 - 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-11 23:12:26 - 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-11 23:12:26 - 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-11 23:12:26 - 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-11 23:12:26 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-11 23:12:26 - Writing [com.dataglove.web.common.ApiResponse@9b32ad3]
+2025-07-11 23:12:26 - Completed 200 OK
+2025-07-11 23:12:26 - Securing GET /v1/data/gesture-results/recent?limit=5
+2025-07-11 23:12:26 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 23:12:26 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-11 23:12:26 - Secured GET /v1/data/gesture-results/recent?limit=5
+2025-07-11 23:12:26 - GET "/api/v1/data/gesture-results/recent?limit=5", parameters={masked}
+2025-07-11 23:12:26 - Mapped to com.dataglove.web.controller.DataController#getRecentGestureResults(int, UserPrincipal)
+2025-07-11 23:12:26 - 
+    select
+        gr1_0.id,
+        gr1_0.confidence,
+        gr1_0.created_at,
+        gr1_0.device_id,
+        gr1_0.gesture_name,
+        gr1_0.processed_data,
+        gr1_0.raw_data,
+        gr1_0.recognition_time,
+        gr1_0.updated_at,
+        gr1_0.user_id 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=? 
+    order by
+        gr1_0.recognition_time desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        gr1_0.id,
+        gr1_0.confidence,
+        gr1_0.created_at,
+        gr1_0.device_id,
+        gr1_0.gesture_name,
+        gr1_0.processed_data,
+        gr1_0.raw_data,
+        gr1_0.recognition_time,
+        gr1_0.updated_at,
+        gr1_0.user_id 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=? 
+    order by
+        gr1_0.recognition_time desc 
+    limit
+        ?, ?
+2025-07-11 23:12:26 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-11 23:12:26 - Writing [com.dataglove.web.common.ApiResponse@47cfc7fc]
+2025-07-11 23:12:26 - Completed 200 OK
+2025-07-11 23:12:26 - Securing GET /v1/devices/my-devices
+2025-07-11 23:12:26 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-11 23:12:26 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-11 23:12:26 - Secured GET /v1/devices/my-devices
+2025-07-11 23:12:26 - GET "/api/v1/devices/my-devices", parameters={}
+2025-07-11 23:12:26 - Mapped to com.dataglove.web.controller.DeviceController#getMyDevices(UserPrincipal)
+2025-07-11 23:12:26 - 
+    select
+        ud1_0.id,
+        ud1_0.bind_time,
+        ud1_0.created_at,
+        ud1_0.device_id,
+        ud1_0.is_active,
+        ud1_0.unbind_time,
+        ud1_0.updated_at,
+        ud1_0.user_id 
+    from
+        user_devices ud1_0 
+    where
+        ud1_0.user_id=? 
+        and ud1_0.is_active=1
+Hibernate: 
+    select
+        ud1_0.id,
+        ud1_0.bind_time,
+        ud1_0.created_at,
+        ud1_0.device_id,
+        ud1_0.is_active,
+        ud1_0.unbind_time,
+        ud1_0.updated_at,
+        ud1_0.user_id 
+    from
+        user_devices ud1_0 
+    where
+        ud1_0.user_id=? 
+        and ud1_0.is_active=1
+2025-07-11 23:12:26 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-11 23:12:26 - Writing [com.dataglove.web.common.ApiResponse@6e363744]
+2025-07-11 23:12:26 - Completed 200 OK
+2025-07-11 23:12:38 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m26s188ms).
+2025-07-11 23:28:34 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s31ms).
+2025-07-11 23:45:14 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m10s783ms).
+2025-07-12 00:01:39 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s705ms).
+2025-07-12 00:17:34 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s965ms).
+2025-07-12 00:21:04 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m264ms).
+2025-07-12 00:36:59 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s981ms).
+2025-07-12 00:53:24 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s6ms).
+2025-07-12 01:09:19 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s968ms).
+2025-07-12 01:11:46 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m56s770ms).
+2025-07-12 01:27:41 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s65ms).
+2025-07-12 01:44:06 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s3ms).
+2025-07-12 02:00:01 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s2ms).
+2025-07-12 02:12:43 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m12s152ms).
+2025-07-12 02:28:38 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s3ms).
+2025-07-12 02:45:03 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s16ms).
+2025-07-12 03:00:58 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s7ms).
+2025-07-12 03:07:03 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m4s866ms).
+2025-07-12 03:23:28 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s954ms).
+2025-07-12 03:39:23 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s4ms).
+2025-07-12 03:55:48 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s993ms).
+2025-07-12 04:11:43 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s995ms).
+2025-07-12 04:28:08 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s964ms).
+2025-07-12 04:44:03 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s25ms).
+2025-07-12 05:00:28 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s997ms).
+2025-07-12 05:16:23 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s5ms).
+2025-07-12 05:32:18 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s979ms).
+2025-07-12 05:49:08 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m19s912ms).
+2025-07-12 06:05:33 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s777ms).
+2025-07-12 06:07:14 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m40s657ms).
+2025-07-12 06:23:08 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s606ms).
+2025-07-12 06:39:33 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s993ms).
+2025-07-12 06:55:28 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s1ms).
+2025-07-12 07:11:23 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s995ms).
+2025-07-12 07:27:18 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s34ms).
+2025-07-12 07:43:43 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s981ms).
+2025-07-12 07:57:36 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m52s559ms).
+2025-07-12 08:06:16 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m40s657ms).
+2025-07-12 08:22:46 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s962ms).
+2025-07-12 08:39:11 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s995ms).
+2025-07-12 08:55:06 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s982ms).
+2025-07-12 09:07:21 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m14s943ms).
+2025-07-12 09:23:46 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s2ms).
+2025-07-12 09:39:55 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m8s576ms).
+2025-07-12 09:42:18 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m53s391ms).
+2025-07-12 09:58:43 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s).
+2025-07-12 10:08:28 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s250ms).
+2025-07-12 10:24:23 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s13ms).
+2025-07-12 10:40:18 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s22ms).
+2025-07-12 10:55:57 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m8s704ms).
+2025-07-12 11:03:54 - Securing GET /v1/auth/me
+2025-07-12 11:03:59 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-12 11:04:02 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-12 11:04:03 - Secured GET /v1/auth/me
+2025-07-12 11:04:03 - GET "/api/v1/auth/me", parameters={}
+2025-07-12 11:04:03 - Mapped to com.dataglove.web.controller.AuthController#getCurrentUser(UserPrincipal)
+2025-07-12 11:04:03 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-12 11:04:03 - Writing [com.dataglove.web.common.ApiResponse@627acb87]
+2025-07-12 11:04:03 - Completed 200 OK
+2025-07-12 11:04:04 - Securing GET /v1/data/statistics/my
+2025-07-12 11:04:04 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-12 11:04:04 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-12 11:04:04 - Secured GET /v1/data/statistics/my
+2025-07-12 11:04:04 - GET "/api/v1/data/statistics/my", parameters={}
+2025-07-12 11:04:04 - Mapped to com.dataglove.web.controller.DataController#getMyDataStatistics(UserPrincipal)
+2025-07-12 11:04:05 - 
+    select
+        count(sd1_0.id) 
+    from
+        sensor_data sd1_0 
+    where
+        sd1_0.user_id=?
+Hibernate: 
+    select
+        count(sd1_0.id) 
+    from
+        sensor_data sd1_0 
+    where
+        sd1_0.user_id=?
+2025-07-12 11:04:05 - 
+    select
+        count(gr1_0.id) 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=?
+Hibernate: 
+    select
+        count(gr1_0.id) 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=?
+2025-07-12 11:04:05 - 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-12 11:04:05 - 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-12 11:04:05 - 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-12 11:04:05 - 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-12 11:04:05 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-12 11:04:05 - Writing [com.dataglove.web.common.ApiResponse@ba23311]
+2025-07-12 11:04:05 - Completed 200 OK
+2025-07-12 11:04:06 - Securing GET /v1/data/gesture-results/recent?limit=5
+2025-07-12 11:04:06 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-12 11:04:06 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-12 11:04:06 - Secured GET /v1/data/gesture-results/recent?limit=5
+2025-07-12 11:04:06 - GET "/api/v1/data/gesture-results/recent?limit=5", parameters={masked}
+2025-07-12 11:04:06 - Mapped to com.dataglove.web.controller.DataController#getRecentGestureResults(int, UserPrincipal)
+2025-07-12 11:04:06 - 
+    select
+        gr1_0.id,
+        gr1_0.confidence,
+        gr1_0.created_at,
+        gr1_0.device_id,
+        gr1_0.gesture_name,
+        gr1_0.processed_data,
+        gr1_0.raw_data,
+        gr1_0.recognition_time,
+        gr1_0.updated_at,
+        gr1_0.user_id 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=? 
+    order by
+        gr1_0.recognition_time desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        gr1_0.id,
+        gr1_0.confidence,
+        gr1_0.created_at,
+        gr1_0.device_id,
+        gr1_0.gesture_name,
+        gr1_0.processed_data,
+        gr1_0.raw_data,
+        gr1_0.recognition_time,
+        gr1_0.updated_at,
+        gr1_0.user_id 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=? 
+    order by
+        gr1_0.recognition_time desc 
+    limit
+        ?, ?
+2025-07-12 11:04:06 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-12 11:04:06 - Writing [com.dataglove.web.common.ApiResponse@3d7fd4aa]
+2025-07-12 11:04:06 - Completed 200 OK
+2025-07-12 11:04:06 - Securing GET /v1/devices/my-devices
+2025-07-12 11:04:06 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-12 11:04:06 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-12 11:04:06 - Secured GET /v1/devices/my-devices
+2025-07-12 11:04:06 - GET "/api/v1/devices/my-devices", parameters={}
+2025-07-12 11:04:06 - Mapped to com.dataglove.web.controller.DeviceController#getMyDevices(UserPrincipal)
+2025-07-12 11:04:06 - 
+    select
+        ud1_0.id,
+        ud1_0.bind_time,
+        ud1_0.created_at,
+        ud1_0.device_id,
+        ud1_0.is_active,
+        ud1_0.unbind_time,
+        ud1_0.updated_at,
+        ud1_0.user_id 
+    from
+        user_devices ud1_0 
+    where
+        ud1_0.user_id=? 
+        and ud1_0.is_active=1
+Hibernate: 
+    select
+        ud1_0.id,
+        ud1_0.bind_time,
+        ud1_0.created_at,
+        ud1_0.device_id,
+        ud1_0.is_active,
+        ud1_0.unbind_time,
+        ud1_0.updated_at,
+        ud1_0.user_id 
+    from
+        user_devices ud1_0 
+    where
+        ud1_0.user_id=? 
+        and ud1_0.is_active=1
+2025-07-12 11:04:06 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-12 11:04:06 - Writing [com.dataglove.web.common.ApiResponse@31708533]
+2025-07-12 11:04:06 - Completed 200 OK
+2025-07-12 11:11:08 - Securing POST /v1/auth/login
+2025-07-12 11:11:08 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:11:08 - Secured POST /v1/auth/login
+2025-07-12 11:11:08 - POST "/api/v1/auth/login", parameters={}
+2025-07-12 11:11:08 - Mapped to com.dataglove.web.controller.AuthController#login(LoginRequest)
+2025-07-12 11:11:08 - Read "application/json;charset=UTF-8" to [com.dataglove.web.dto.LoginRequest@6254ac25]
+2025-07-12 11:11:08 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-12 11:11:08 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-12 11:11:08 - Authenticated user
+2025-07-12 11:11:08 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-12 11:11:09 - 
+    update
+        users 
+    set
+        avatar_url=?,
+        email=?,
+        last_login_at=?,
+        password_hash=?,
+        phone=?,
+        real_name=?,
+        status=?,
+        updated_at=?,
+        username=? 
+    where
+        id=?
+Hibernate: 
+    update
+        users 
+    set
+        avatar_url=?,
+        email=?,
+        last_login_at=?,
+        password_hash=?,
+        phone=?,
+        real_name=?,
+        status=?,
+        updated_at=?,
+        username=? 
+    where
+        id=?
+2025-07-12 11:11:09 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-07-12 11:11:09 - Writing [com.dataglove.web.common.ApiResponse@2e2bdf40]
+2025-07-12 11:11:09 - Completed 200 OK
+2025-07-12 11:13:28 - Securing GET /
+2025-07-12 11:13:28 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:13:28 - Pre-authenticated entry point called. Rejecting access
+2025-07-12 11:13:28 - Securing GET /error
+2025-07-12 11:13:28 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:13:28 - Pre-authenticated entry point called. Rejecting access
+2025-07-12 11:13:32 - Securing GET /
+2025-07-12 11:13:32 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:13:32 - Pre-authenticated entry point called. Rejecting access
+2025-07-12 11:13:32 - Securing GET /error
+2025-07-12 11:13:32 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:13:32 - Pre-authenticated entry point called. Rejecting access
+2025-07-12 11:13:33 - Securing GET /
+2025-07-12 11:13:33 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:13:33 - Pre-authenticated entry point called. Rejecting access
+2025-07-12 11:13:33 - Securing GET /error
+2025-07-12 11:13:33 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:13:33 - Pre-authenticated entry point called. Rejecting access
+2025-07-12 11:14:42 - Securing GET /swagger-ui.html
+2025-07-12 11:14:42 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:14:42 - Secured GET /swagger-ui.html
+2025-07-12 11:14:42 - GET "/api/swagger-ui.html", parameters={}
+2025-07-12 11:14:42 - Mapped to org.springdoc.webmvc.ui.SwaggerWelcomeWebMvc#redirectToUi(HttpServletRequest)
+2025-07-12 11:14:43 - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2025-07-12 11:14:43 - Nothing to write: null body
+2025-07-12 11:14:43 - Completed 302 FOUND
+2025-07-12 11:14:43 - Securing GET /swagger-ui/index.html
+2025-07-12 11:14:43 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:14:43 - Secured GET /swagger-ui/index.html
+2025-07-12 11:14:43 - GET "/api/swagger-ui/index.html", parameters={}
+2025-07-12 11:14:43 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-12 11:14:43 - Completed 200 OK
+2025-07-12 11:14:43 - Securing GET /swagger-ui/swagger-ui.css
+2025-07-12 11:14:43 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:14:43 - Securing GET /swagger-ui/index.css
+2025-07-12 11:14:43 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:14:43 - Secured GET /swagger-ui/swagger-ui.css
+2025-07-12 11:14:43 - Securing GET /swagger-ui/swagger-initializer.js
+2025-07-12 11:14:43 - Securing GET /swagger-ui/swagger-ui-bundle.js
+2025-07-12 11:14:43 - GET "/api/swagger-ui/swagger-ui.css", parameters={}
+2025-07-12 11:14:43 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:14:43 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:14:43 - Secured GET /swagger-ui/index.css
+2025-07-12 11:14:43 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-12 11:14:43 - GET "/api/swagger-ui/index.css", parameters={}
+2025-07-12 11:14:43 - Securing GET /swagger-ui/swagger-ui-standalone-preset.js
+2025-07-12 11:14:43 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:14:43 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-12 11:14:43 - Secured GET /swagger-ui/swagger-initializer.js
+2025-07-12 11:14:43 - GET "/api/swagger-ui/swagger-initializer.js", parameters={}
+2025-07-12 11:14:43 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-12 11:14:43 - Secured GET /swagger-ui/swagger-ui-standalone-preset.js
+2025-07-12 11:14:43 - GET "/api/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
+2025-07-12 11:14:43 - Completed 200 OK
+2025-07-12 11:14:43 - Secured GET /swagger-ui/swagger-ui-bundle.js
+2025-07-12 11:14:43 - GET "/api/swagger-ui/swagger-ui-bundle.js", parameters={}
+2025-07-12 11:14:43 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-12 11:14:43 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-12 11:14:43 - Completed 200 OK
+2025-07-12 11:14:43 - Completed 200 OK
+2025-07-12 11:14:43 - Completed 200 OK
+2025-07-12 11:14:43 - Completed 200 OK
+2025-07-12 11:14:44 - Securing GET /v3/api-docs/swagger-config
+2025-07-12 11:14:44 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:14:44 - Securing GET /swagger-ui/favicon-32x32.png
+2025-07-12 11:14:44 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:14:44 - Secured GET /v3/api-docs/swagger-config
+2025-07-12 11:14:44 - GET "/api/v3/api-docs/swagger-config", parameters={}
+2025-07-12 11:14:44 - Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2025-07-12 11:14:44 - Secured GET /swagger-ui/favicon-32x32.png
+2025-07-12 11:14:44 - GET "/api/swagger-ui/favicon-32x32.png", parameters={}
+2025-07-12 11:14:44 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-12 11:14:44 - Using 'application/json', given [*/*] and supported [application/json]
+2025-07-12 11:14:44 - Writing [{configUrl=/api/v3/api-docs/swagger-config, displayRequestDuration=true, oauth2RedirectUrl=http://lo (truncated)...]
+2025-07-12 11:14:44 - Completed 200 OK
+2025-07-12 11:14:44 - Completed 200 OK
+2025-07-12 11:14:44 - Securing GET /v3/api-docs
+2025-07-12 11:14:44 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:14:44 - Secured GET /v3/api-docs
+2025-07-12 11:14:44 - GET "/api/v3/api-docs", parameters={}
+2025-07-12 11:14:44 - Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2025-07-12 11:14:45 - Init duration for springdoc-openapi is: 805 ms
+2025-07-12 11:14:45 - Using 'application/json', given [application/json, */*] and supported [application/json]
+2025-07-12 11:14:45 - Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 48, 46, 49, 34, 44, 34, 105, 110, 10 (truncated)...]
+2025-07-12 11:14:45 - Completed 200 OK
+2025-07-12 11:15:40 - Securing GET /v1/auth/me
+2025-07-12 11:15:40 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-12 11:15:40 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-12 11:15:40 - Secured GET /v1/auth/me
+2025-07-12 11:15:40 - GET "/api/v1/auth/me", parameters={}
+2025-07-12 11:15:40 - Mapped to com.dataglove.web.controller.AuthController#getCurrentUser(UserPrincipal)
+2025-07-12 11:15:40 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-12 11:15:40 - Writing [com.dataglove.web.common.ApiResponse@6ac5a933]
+2025-07-12 11:15:40 - Completed 200 OK
+2025-07-12 11:15:40 - Securing GET /v1/data/statistics/my
+2025-07-12 11:15:40 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-12 11:15:41 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-12 11:15:41 - Secured GET /v1/data/statistics/my
+2025-07-12 11:15:41 - GET "/api/v1/data/statistics/my", parameters={}
+2025-07-12 11:15:41 - Mapped to com.dataglove.web.controller.DataController#getMyDataStatistics(UserPrincipal)
+2025-07-12 11:15:41 - 
+    select
+        count(sd1_0.id) 
+    from
+        sensor_data sd1_0 
+    where
+        sd1_0.user_id=?
+Hibernate: 
+    select
+        count(sd1_0.id) 
+    from
+        sensor_data sd1_0 
+    where
+        sd1_0.user_id=?
+2025-07-12 11:15:41 - 
+    select
+        count(gr1_0.id) 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=?
+Hibernate: 
+    select
+        count(gr1_0.id) 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=?
+2025-07-12 11:15:41 - 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-12 11:15:41 - 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-12 11:15:41 - 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-12 11:15:41 - 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-12 11:15:41 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-12 11:15:41 - Writing [com.dataglove.web.common.ApiResponse@656d6068]
+2025-07-12 11:15:41 - Completed 200 OK
+2025-07-12 11:15:41 - Securing GET /v1/data/gesture-results/recent?limit=5
+2025-07-12 11:15:41 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-12 11:15:41 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-12 11:15:41 - Secured GET /v1/data/gesture-results/recent?limit=5
+2025-07-12 11:15:41 - GET "/api/v1/data/gesture-results/recent?limit=5", parameters={masked}
+2025-07-12 11:15:41 - Mapped to com.dataglove.web.controller.DataController#getRecentGestureResults(int, UserPrincipal)
+2025-07-12 11:15:41 - 
+    select
+        gr1_0.id,
+        gr1_0.confidence,
+        gr1_0.created_at,
+        gr1_0.device_id,
+        gr1_0.gesture_name,
+        gr1_0.processed_data,
+        gr1_0.raw_data,
+        gr1_0.recognition_time,
+        gr1_0.updated_at,
+        gr1_0.user_id 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=? 
+    order by
+        gr1_0.recognition_time desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        gr1_0.id,
+        gr1_0.confidence,
+        gr1_0.created_at,
+        gr1_0.device_id,
+        gr1_0.gesture_name,
+        gr1_0.processed_data,
+        gr1_0.raw_data,
+        gr1_0.recognition_time,
+        gr1_0.updated_at,
+        gr1_0.user_id 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=? 
+    order by
+        gr1_0.recognition_time desc 
+    limit
+        ?, ?
+2025-07-12 11:15:41 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-12 11:15:41 - Writing [com.dataglove.web.common.ApiResponse@29d444d5]
+2025-07-12 11:15:41 - Completed 200 OK
+2025-07-12 11:15:41 - Securing GET /v1/devices/my-devices
+2025-07-12 11:15:41 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-12 11:15:41 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-12 11:15:41 - Secured GET /v1/devices/my-devices
+2025-07-12 11:15:41 - GET "/api/v1/devices/my-devices", parameters={}
+2025-07-12 11:15:41 - Mapped to com.dataglove.web.controller.DeviceController#getMyDevices(UserPrincipal)
+2025-07-12 11:15:41 - 
+    select
+        ud1_0.id,
+        ud1_0.bind_time,
+        ud1_0.created_at,
+        ud1_0.device_id,
+        ud1_0.is_active,
+        ud1_0.unbind_time,
+        ud1_0.updated_at,
+        ud1_0.user_id 
+    from
+        user_devices ud1_0 
+    where
+        ud1_0.user_id=? 
+        and ud1_0.is_active=1
+Hibernate: 
+    select
+        ud1_0.id,
+        ud1_0.bind_time,
+        ud1_0.created_at,
+        ud1_0.device_id,
+        ud1_0.is_active,
+        ud1_0.unbind_time,
+        ud1_0.updated_at,
+        ud1_0.user_id 
+    from
+        user_devices ud1_0 
+    where
+        ud1_0.user_id=? 
+        and ud1_0.is_active=1
+2025-07-12 11:15:41 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-12 11:15:41 - Writing [com.dataglove.web.common.ApiResponse@24877020]
+2025-07-12 11:15:41 - Completed 200 OK
+2025-07-12 11:15:54 - Securing GET /swagger-ui.html
+2025-07-12 11:15:54 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:15:54 - Secured GET /swagger-ui.html
+2025-07-12 11:15:54 - GET "/api/swagger-ui.html", parameters={}
+2025-07-12 11:15:54 - Mapped to org.springdoc.webmvc.ui.SwaggerWelcomeWebMvc#redirectToUi(HttpServletRequest)
+2025-07-12 11:15:54 - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2025-07-12 11:15:54 - Nothing to write: null body
+2025-07-12 11:15:54 - Completed 302 FOUND
+2025-07-12 11:15:54 - Securing GET /swagger-ui/index.html
+2025-07-12 11:15:54 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:15:54 - Secured GET /swagger-ui/index.html
+2025-07-12 11:15:54 - GET "/api/swagger-ui/index.html", parameters={}
+2025-07-12 11:15:54 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-12 11:15:54 - Completed 200 OK
+2025-07-12 11:15:54 - Securing GET /swagger-ui/swagger-ui.css
+2025-07-12 11:15:54 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:15:54 - Securing GET /swagger-ui/swagger-ui-bundle.js
+2025-07-12 11:15:54 - Securing GET /swagger-ui/swagger-ui-standalone-preset.js
+2025-07-12 11:15:54 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:15:54 - Secured GET /swagger-ui/swagger-ui.css
+2025-07-12 11:15:54 - GET "/api/swagger-ui/swagger-ui.css", parameters={}
+2025-07-12 11:15:54 - Securing GET /swagger-ui/swagger-initializer.js
+2025-07-12 11:15:54 - Securing GET /swagger-ui/index.css
+2025-07-12 11:15:54 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:15:54 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:15:54 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:15:54 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-12 11:15:54 - Secured GET /swagger-ui/swagger-ui-bundle.js
+2025-07-12 11:15:54 - GET "/api/swagger-ui/swagger-ui-bundle.js", parameters={}
+2025-07-12 11:15:54 - Secured GET /swagger-ui/swagger-ui-standalone-preset.js
+2025-07-12 11:15:54 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-12 11:15:54 - Secured GET /swagger-ui/swagger-initializer.js
+2025-07-12 11:15:54 - GET "/api/swagger-ui/swagger-initializer.js", parameters={}
+2025-07-12 11:15:54 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-12 11:15:54 - GET "/api/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
+2025-07-12 11:15:54 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-12 11:15:54 - Secured GET /swagger-ui/index.css
+2025-07-12 11:15:54 - GET "/api/swagger-ui/index.css", parameters={}
+2025-07-12 11:15:54 - Completed 200 OK
+2025-07-12 11:15:54 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-12 11:15:54 - Completed 200 OK
+2025-07-12 11:15:54 - Completed 200 OK
+2025-07-12 11:15:54 - Completed 200 OK
+2025-07-12 11:15:54 - Completed 200 OK
+2025-07-12 11:15:54 - Securing GET /v3/api-docs/swagger-config
+2025-07-12 11:15:54 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:15:54 - Secured GET /v3/api-docs/swagger-config
+2025-07-12 11:15:54 - GET "/api/v3/api-docs/swagger-config", parameters={}
+2025-07-12 11:15:54 - Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2025-07-12 11:15:54 - Using 'application/json', given [*/*] and supported [application/json]
+2025-07-12 11:15:54 - Writing [{configUrl=/api/v3/api-docs/swagger-config, displayRequestDuration=true, oauth2RedirectUrl=http://lo (truncated)...]
+2025-07-12 11:15:54 - Completed 200 OK
+2025-07-12 11:15:54 - Securing GET /v3/api-docs
+2025-07-12 11:15:54 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:15:54 - Secured GET /v3/api-docs
+2025-07-12 11:15:54 - GET "/api/v3/api-docs", parameters={}
+2025-07-12 11:15:54 - Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2025-07-12 11:15:54 - Using 'application/json', given [application/json, */*] and supported [application/json]
+2025-07-12 11:15:54 - Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 48, 46, 49, 34, 44, 34, 105, 110, 10 (truncated)...]
+2025-07-12 11:15:54 - Completed 200 OK
+2025-07-12 11:31:17 - Securing GET /swagger-ui.html
+2025-07-12 11:31:17 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:31:17 - Secured GET /swagger-ui.html
+2025-07-12 11:31:17 - GET "/api/swagger-ui.html", parameters={}
+2025-07-12 11:31:17 - Mapped to org.springdoc.webmvc.ui.SwaggerWelcomeWebMvc#redirectToUi(HttpServletRequest)
+2025-07-12 11:31:17 - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2025-07-12 11:31:17 - Nothing to write: null body
+2025-07-12 11:31:17 - Completed 302 FOUND
+2025-07-12 11:31:17 - Securing GET /swagger-ui/index.html
+2025-07-12 11:31:17 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:31:17 - Secured GET /swagger-ui/index.html
+2025-07-12 11:31:17 - GET "/api/swagger-ui/index.html", parameters={}
+2025-07-12 11:31:17 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-12 11:31:17 - Completed 200 OK
+2025-07-12 11:31:17 - Securing GET /swagger-ui/swagger-ui.css
+2025-07-12 11:31:17 - Securing GET /swagger-ui/swagger-ui-bundle.js
+2025-07-12 11:31:17 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:31:17 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:31:17 - Securing GET /swagger-ui/swagger-initializer.js
+2025-07-12 11:31:17 - Securing GET /swagger-ui/swagger-ui-standalone-preset.js
+2025-07-12 11:31:17 - Securing GET /swagger-ui/index.css
+2025-07-12 11:31:17 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:31:17 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:31:17 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:31:17 - Secured GET /swagger-ui/swagger-ui-standalone-preset.js
+2025-07-12 11:31:17 - GET "/api/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
+2025-07-12 11:31:17 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-12 11:31:17 - Secured GET /swagger-ui/swagger-ui.css
+2025-07-12 11:31:17 - GET "/api/swagger-ui/swagger-ui.css", parameters={}
+2025-07-12 11:31:17 - Secured GET /swagger-ui/index.css
+2025-07-12 11:31:17 - Secured GET /swagger-ui/swagger-ui-bundle.js
+2025-07-12 11:31:17 - GET "/api/swagger-ui/index.css", parameters={}
+2025-07-12 11:31:17 - GET "/api/swagger-ui/swagger-ui-bundle.js", parameters={}
+2025-07-12 11:31:17 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-12 11:31:17 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-12 11:31:17 - Secured GET /swagger-ui/swagger-initializer.js
+2025-07-12 11:31:17 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-12 11:31:17 - GET "/api/swagger-ui/swagger-initializer.js", parameters={}
+2025-07-12 11:31:17 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-12 11:31:17 - Completed 200 OK
+2025-07-12 11:31:17 - Completed 200 OK
+2025-07-12 11:31:17 - Completed 200 OK
+2025-07-12 11:31:17 - Completed 200 OK
+2025-07-12 11:31:17 - Completed 200 OK
+2025-07-12 11:31:18 - Securing GET /v3/api-docs/swagger-config
+2025-07-12 11:31:18 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:31:18 - Secured GET /v3/api-docs/swagger-config
+2025-07-12 11:31:18 - GET "/api/v3/api-docs/swagger-config", parameters={}
+2025-07-12 11:31:18 - Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2025-07-12 11:31:18 - Using 'application/json', given [*/*] and supported [application/json]
+2025-07-12 11:31:18 - Writing [{configUrl=/api/v3/api-docs/swagger-config, displayRequestDuration=true, oauth2RedirectUrl=http://lo (truncated)...]
+2025-07-12 11:31:18 - Completed 200 OK
+2025-07-12 11:31:18 - Securing GET /v3/api-docs
+2025-07-12 11:31:18 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-12 11:31:18 - Secured GET /v3/api-docs
+2025-07-12 11:31:18 - GET "/api/v3/api-docs", parameters={}
+2025-07-12 11:31:18 - Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2025-07-12 11:31:18 - Using 'application/json', given [application/json, */*] and supported [application/json]
+2025-07-12 11:31:18 - Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 48, 46, 49, 34, 44, 34, 105, 110, 10 (truncated)...]
+2025-07-12 11:31:18 - Completed 200 OK
+2025-07-12 11:31:30 - Securing GET /v1/auth/me
+2025-07-12 11:31:30 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-12 11:31:30 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-12 11:31:30 - Secured GET /v1/auth/me
+2025-07-12 11:31:30 - GET "/api/v1/auth/me", parameters={}
+2025-07-12 11:31:30 - Mapped to com.dataglove.web.controller.AuthController#getCurrentUser(UserPrincipal)
+2025-07-12 11:31:30 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-12 11:31:30 - Writing [com.dataglove.web.common.ApiResponse@323b3032]
+2025-07-12 11:31:30 - Completed 200 OK
+2025-07-12 11:31:31 - Securing GET /v1/auth/me
+2025-07-12 11:31:31 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-12 11:31:31 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-12 11:31:32 - Secured GET /v1/auth/me
+2025-07-12 11:31:32 - GET "/api/v1/auth/me", parameters={}
+2025-07-12 11:31:32 - Mapped to com.dataglove.web.controller.AuthController#getCurrentUser(UserPrincipal)
+2025-07-12 11:31:32 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-12 11:31:32 - Writing [com.dataglove.web.common.ApiResponse@5c3395e9]
+2025-07-12 11:31:32 - Completed 200 OK
+2025-07-12 11:31:32 - Securing GET /v1/data/statistics/my
+2025-07-12 11:31:32 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-12 11:31:32 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-12 11:31:32 - Secured GET /v1/data/statistics/my
+2025-07-12 11:31:32 - GET "/api/v1/data/statistics/my", parameters={}
+2025-07-12 11:31:32 - Mapped to com.dataglove.web.controller.DataController#getMyDataStatistics(UserPrincipal)
+2025-07-12 11:31:32 - 
+    select
+        count(sd1_0.id) 
+    from
+        sensor_data sd1_0 
+    where
+        sd1_0.user_id=?
+Hibernate: 
+    select
+        count(sd1_0.id) 
+    from
+        sensor_data sd1_0 
+    where
+        sd1_0.user_id=?
+2025-07-12 11:31:32 - 
+    select
+        count(gr1_0.id) 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=?
+Hibernate: 
+    select
+        count(gr1_0.id) 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=?
+2025-07-12 11:31:32 - 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-12 11:31:32 - 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-12 11:31:32 - 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-12 11:31:32 - 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-12 11:31:32 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-12 11:31:32 - Writing [com.dataglove.web.common.ApiResponse@cc9344]
+2025-07-12 11:31:32 - Completed 200 OK
+2025-07-12 11:31:32 - Securing GET /v1/data/gesture-results/recent?limit=5
+2025-07-12 11:31:32 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-12 11:31:32 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-12 11:31:32 - Secured GET /v1/data/gesture-results/recent?limit=5
+2025-07-12 11:31:32 - GET "/api/v1/data/gesture-results/recent?limit=5", parameters={masked}
+2025-07-12 11:31:32 - Mapped to com.dataglove.web.controller.DataController#getRecentGestureResults(int, UserPrincipal)
+2025-07-12 11:31:32 - 
+    select
+        gr1_0.id,
+        gr1_0.confidence,
+        gr1_0.created_at,
+        gr1_0.device_id,
+        gr1_0.gesture_name,
+        gr1_0.processed_data,
+        gr1_0.raw_data,
+        gr1_0.recognition_time,
+        gr1_0.updated_at,
+        gr1_0.user_id 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=? 
+    order by
+        gr1_0.recognition_time desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        gr1_0.id,
+        gr1_0.confidence,
+        gr1_0.created_at,
+        gr1_0.device_id,
+        gr1_0.gesture_name,
+        gr1_0.processed_data,
+        gr1_0.raw_data,
+        gr1_0.recognition_time,
+        gr1_0.updated_at,
+        gr1_0.user_id 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=? 
+    order by
+        gr1_0.recognition_time desc 
+    limit
+        ?, ?
+2025-07-12 11:31:32 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-12 11:31:32 - Writing [com.dataglove.web.common.ApiResponse@77a865a2]
+2025-07-12 11:31:32 - Completed 200 OK
+2025-07-12 11:31:32 - Securing GET /v1/devices/my-devices
+2025-07-12 11:31:32 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-12 11:31:32 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-12 11:31:32 - Secured GET /v1/devices/my-devices
+2025-07-12 11:31:32 - GET "/api/v1/devices/my-devices", parameters={}
+2025-07-12 11:31:32 - Mapped to com.dataglove.web.controller.DeviceController#getMyDevices(UserPrincipal)
+2025-07-12 11:31:32 - 
+    select
+        ud1_0.id,
+        ud1_0.bind_time,
+        ud1_0.created_at,
+        ud1_0.device_id,
+        ud1_0.is_active,
+        ud1_0.unbind_time,
+        ud1_0.updated_at,
+        ud1_0.user_id 
+    from
+        user_devices ud1_0 
+    where
+        ud1_0.user_id=? 
+        and ud1_0.is_active=1
+Hibernate: 
+    select
+        ud1_0.id,
+        ud1_0.bind_time,
+        ud1_0.created_at,
+        ud1_0.device_id,
+        ud1_0.is_active,
+        ud1_0.unbind_time,
+        ud1_0.updated_at,
+        ud1_0.user_id 
+    from
+        user_devices ud1_0 
+    where
+        ud1_0.user_id=? 
+        and ud1_0.is_active=1
+2025-07-12 11:31:32 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-12 11:31:32 - Writing [com.dataglove.web.common.ApiResponse@4a2f2bde]
+2025-07-12 11:31:32 - Completed 200 OK
+2025-07-12 11:49:43 - Securing GET /v1/auth/me
+2025-07-12 11:49:45 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-12 11:49:46 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-12 11:49:46 - Secured GET /v1/auth/me
+2025-07-12 11:49:46 - GET "/api/v1/auth/me", parameters={}
+2025-07-12 11:49:46 - Mapped to com.dataglove.web.controller.AuthController#getCurrentUser(UserPrincipal)
+2025-07-12 11:49:46 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-12 11:49:46 - Writing [com.dataglove.web.common.ApiResponse@6441b6aa]
+2025-07-12 11:49:46 - Completed 200 OK
+2025-07-12 11:50:29 - Securing GET /v1/data/statistics/my
+2025-07-12 11:50:29 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-12 11:50:29 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-12 11:50:29 - Secured GET /v1/data/statistics/my
+2025-07-12 11:50:29 - GET "/api/v1/data/statistics/my", parameters={}
+2025-07-12 11:50:29 - Mapped to com.dataglove.web.controller.DataController#getMyDataStatistics(UserPrincipal)
+2025-07-12 11:50:29 - 
+    select
+        count(sd1_0.id) 
+    from
+        sensor_data sd1_0 
+    where
+        sd1_0.user_id=?
+Hibernate: 
+    select
+        count(sd1_0.id) 
+    from
+        sensor_data sd1_0 
+    where
+        sd1_0.user_id=?
+2025-07-12 11:50:29 - 
+    select
+        count(gr1_0.id) 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=?
+Hibernate: 
+    select
+        count(gr1_0.id) 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=?
+2025-07-12 11:50:29 - 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-12 11:50:29 - 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-12 11:50:29 - 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-12 11:50:29 - 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-12 11:50:29 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-12 11:50:29 - Writing [com.dataglove.web.common.ApiResponse@71799e5a]
+2025-07-12 11:50:29 - Completed 200 OK
+2025-07-12 11:50:29 - Securing GET /v1/data/gesture-results/recent?limit=5
+2025-07-12 11:50:29 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-12 11:50:29 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-12 11:50:29 - Secured GET /v1/data/gesture-results/recent?limit=5
+2025-07-12 11:50:29 - GET "/api/v1/data/gesture-results/recent?limit=5", parameters={masked}
+2025-07-12 11:50:29 - Mapped to com.dataglove.web.controller.DataController#getRecentGestureResults(int, UserPrincipal)
+2025-07-12 11:50:29 - 
+    select
+        gr1_0.id,
+        gr1_0.confidence,
+        gr1_0.created_at,
+        gr1_0.device_id,
+        gr1_0.gesture_name,
+        gr1_0.processed_data,
+        gr1_0.raw_data,
+        gr1_0.recognition_time,
+        gr1_0.updated_at,
+        gr1_0.user_id 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=? 
+    order by
+        gr1_0.recognition_time desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        gr1_0.id,
+        gr1_0.confidence,
+        gr1_0.created_at,
+        gr1_0.device_id,
+        gr1_0.gesture_name,
+        gr1_0.processed_data,
+        gr1_0.raw_data,
+        gr1_0.recognition_time,
+        gr1_0.updated_at,
+        gr1_0.user_id 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=? 
+    order by
+        gr1_0.recognition_time desc 
+    limit
+        ?, ?
+2025-07-12 11:50:29 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-12 11:50:29 - Writing [com.dataglove.web.common.ApiResponse@65b88e3]
+2025-07-12 11:50:29 - Completed 200 OK
+2025-07-12 11:50:29 - Securing GET /v1/devices/my-devices
+2025-07-12 11:50:29 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-12 11:50:29 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-12 11:50:29 - Secured GET /v1/devices/my-devices
+2025-07-12 11:50:29 - GET "/api/v1/devices/my-devices", parameters={}
+2025-07-12 11:50:29 - Mapped to com.dataglove.web.controller.DeviceController#getMyDevices(UserPrincipal)
+2025-07-12 11:50:29 - 
+    select
+        ud1_0.id,
+        ud1_0.bind_time,
+        ud1_0.created_at,
+        ud1_0.device_id,
+        ud1_0.is_active,
+        ud1_0.unbind_time,
+        ud1_0.updated_at,
+        ud1_0.user_id 
+    from
+        user_devices ud1_0 
+    where
+        ud1_0.user_id=? 
+        and ud1_0.is_active=1
+Hibernate: 
+    select
+        ud1_0.id,
+        ud1_0.bind_time,
+        ud1_0.created_at,
+        ud1_0.device_id,
+        ud1_0.is_active,
+        ud1_0.unbind_time,
+        ud1_0.updated_at,
+        ud1_0.user_id 
+    from
+        user_devices ud1_0 
+    where
+        ud1_0.user_id=? 
+        and ud1_0.is_active=1
+2025-07-12 11:50:29 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-12 11:50:29 - Writing [com.dataglove.web.common.ApiResponse@5365932f]
+2025-07-12 11:50:29 - Completed 200 OK
+2025-07-12 11:50:35 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m6s208ms).
+2025-07-12 11:52:31 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49s48ms).
+2025-07-12 11:53:47 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s707ms).
+2025-07-12 12:00:57 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50s237ms).
+2025-07-12 12:02:18 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50s899ms).
+2025-07-12 12:03:10 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52s255ms).
+2025-07-12 12:05:00 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m19s697ms).
+2025-07-12 12:07:03 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m2s450ms).
+2025-07-12 12:23:28 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s987ms).
+2025-07-12 12:39:53 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s13ms).
+2025-07-12 12:48:58 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m35s751ms).
+2025-07-12 12:59:04 - Securing GET /v1/auth/me
+2025-07-12 12:59:04 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-12 12:59:04 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-12 12:59:04 - Secured GET /v1/auth/me
+2025-07-12 12:59:04 - GET "/api/v1/auth/me", parameters={}
+2025-07-12 12:59:04 - Mapped to com.dataglove.web.controller.AuthController#getCurrentUser(UserPrincipal)
+2025-07-12 12:59:04 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-12 12:59:04 - Writing [com.dataglove.web.common.ApiResponse@6714cb2f]
+2025-07-12 12:59:04 - Completed 200 OK
+2025-07-12 12:59:05 - Securing GET /v1/data/statistics/my
+2025-07-12 12:59:05 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-12 12:59:05 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-12 12:59:05 - Secured GET /v1/data/statistics/my
+2025-07-12 12:59:05 - GET "/api/v1/data/statistics/my", parameters={}
+2025-07-12 12:59:05 - Mapped to com.dataglove.web.controller.DataController#getMyDataStatistics(UserPrincipal)
+2025-07-12 12:59:05 - 
+    select
+        count(sd1_0.id) 
+    from
+        sensor_data sd1_0 
+    where
+        sd1_0.user_id=?
+Hibernate: 
+    select
+        count(sd1_0.id) 
+    from
+        sensor_data sd1_0 
+    where
+        sd1_0.user_id=?
+2025-07-12 12:59:05 - 
+    select
+        count(gr1_0.id) 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=?
+Hibernate: 
+    select
+        count(gr1_0.id) 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=?
+2025-07-12 12:59:05 - 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-12 12:59:05 - 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-12 12:59:05 - 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-12 12:59:05 - 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-12 12:59:05 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-12 12:59:05 - Writing [com.dataglove.web.common.ApiResponse@4d8cdc24]
+2025-07-12 12:59:05 - Completed 200 OK
+2025-07-12 12:59:05 - Securing GET /v1/data/gesture-results/recent?limit=5
+2025-07-12 12:59:05 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-12 12:59:05 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-12 12:59:05 - Secured GET /v1/data/gesture-results/recent?limit=5
+2025-07-12 12:59:05 - GET "/api/v1/data/gesture-results/recent?limit=5", parameters={masked}
+2025-07-12 12:59:05 - Mapped to com.dataglove.web.controller.DataController#getRecentGestureResults(int, UserPrincipal)
+2025-07-12 12:59:05 - 
+    select
+        gr1_0.id,
+        gr1_0.confidence,
+        gr1_0.created_at,
+        gr1_0.device_id,
+        gr1_0.gesture_name,
+        gr1_0.processed_data,
+        gr1_0.raw_data,
+        gr1_0.recognition_time,
+        gr1_0.updated_at,
+        gr1_0.user_id 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=? 
+    order by
+        gr1_0.recognition_time desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        gr1_0.id,
+        gr1_0.confidence,
+        gr1_0.created_at,
+        gr1_0.device_id,
+        gr1_0.gesture_name,
+        gr1_0.processed_data,
+        gr1_0.raw_data,
+        gr1_0.recognition_time,
+        gr1_0.updated_at,
+        gr1_0.user_id 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=? 
+    order by
+        gr1_0.recognition_time desc 
+    limit
+        ?, ?
+2025-07-12 12:59:05 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-12 12:59:05 - Writing [com.dataglove.web.common.ApiResponse@37a5111e]
+2025-07-12 12:59:05 - Completed 200 OK
+2025-07-12 12:59:05 - Securing GET /v1/devices/my-devices
+2025-07-12 12:59:05 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-12 12:59:05 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-12 12:59:05 - Secured GET /v1/devices/my-devices
+2025-07-12 12:59:05 - GET "/api/v1/devices/my-devices", parameters={}
+2025-07-12 12:59:05 - Mapped to com.dataglove.web.controller.DeviceController#getMyDevices(UserPrincipal)
+2025-07-12 12:59:05 - 
+    select
+        ud1_0.id,
+        ud1_0.bind_time,
+        ud1_0.created_at,
+        ud1_0.device_id,
+        ud1_0.is_active,
+        ud1_0.unbind_time,
+        ud1_0.updated_at,
+        ud1_0.user_id 
+    from
+        user_devices ud1_0 
+    where
+        ud1_0.user_id=? 
+        and ud1_0.is_active=1
+Hibernate: 
+    select
+        ud1_0.id,
+        ud1_0.bind_time,
+        ud1_0.created_at,
+        ud1_0.device_id,
+        ud1_0.is_active,
+        ud1_0.unbind_time,
+        ud1_0.updated_at,
+        ud1_0.user_id 
+    from
+        user_devices ud1_0 
+    where
+        ud1_0.user_id=? 
+        and ud1_0.is_active=1
+2025-07-12 12:59:05 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-12 12:59:05 - Writing [com.dataglove.web.common.ApiResponse@6a5c2419]
+2025-07-12 12:59:05 - Completed 200 OK
+2025-07-12 13:14:53 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s540ms).
+2025-07-12 13:31:18 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s57ms).
+2025-07-12 13:47:13 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s125ms).
+2025-07-12 14:01:47 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m3s636ms).
+2025-07-12 14:02:32 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s415ms).
+2025-07-12 14:16:58 - Securing GET /v1/auth/me
+2025-07-12 14:16:59 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-12 14:16:59 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-12 14:16:59 - Secured GET /v1/auth/me
+2025-07-12 14:16:59 - GET "/api/v1/auth/me", parameters={}
+2025-07-12 14:16:59 - Mapped to com.dataglove.web.controller.AuthController#getCurrentUser(UserPrincipal)
+2025-07-12 14:16:59 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-12 14:16:59 - Writing [com.dataglove.web.common.ApiResponse@4f598469]
+2025-07-12 14:16:59 - Completed 200 OK
+2025-07-12 14:16:59 - Securing GET /v1/data/statistics/my
+2025-07-12 14:16:59 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-12 14:16:59 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-12 14:16:59 - Secured GET /v1/data/statistics/my
+2025-07-12 14:16:59 - GET "/api/v1/data/statistics/my", parameters={}
+2025-07-12 14:16:59 - Mapped to com.dataglove.web.controller.DataController#getMyDataStatistics(UserPrincipal)
+2025-07-12 14:16:59 - 
+    select
+        count(sd1_0.id) 
+    from
+        sensor_data sd1_0 
+    where
+        sd1_0.user_id=?
+Hibernate: 
+    select
+        count(sd1_0.id) 
+    from
+        sensor_data sd1_0 
+    where
+        sd1_0.user_id=?
+2025-07-12 14:16:59 - 
+    select
+        count(gr1_0.id) 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=?
+Hibernate: 
+    select
+        count(gr1_0.id) 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=?
+2025-07-12 14:16:59 - 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-12 14:16:59 - 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-12 14:16:59 - 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.practice_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-12 14:16:59 - 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+Hibernate: 
+    select
+        sum(lr1_0.success_count) 
+    from
+        learning_records lr1_0 
+    where
+        lr1_0.user_id=?
+2025-07-12 14:16:59 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-12 14:16:59 - Writing [com.dataglove.web.common.ApiResponse@7c6c197c]
+2025-07-12 14:16:59 - Completed 200 OK
+2025-07-12 14:16:59 - Securing GET /v1/data/gesture-results/recent?limit=5
+2025-07-12 14:16:59 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-12 14:16:59 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-12 14:16:59 - Secured GET /v1/data/gesture-results/recent?limit=5
+2025-07-12 14:16:59 - GET "/api/v1/data/gesture-results/recent?limit=5", parameters={masked}
+2025-07-12 14:16:59 - Mapped to com.dataglove.web.controller.DataController#getRecentGestureResults(int, UserPrincipal)
+2025-07-12 14:16:59 - 
+    select
+        gr1_0.id,
+        gr1_0.confidence,
+        gr1_0.created_at,
+        gr1_0.device_id,
+        gr1_0.gesture_name,
+        gr1_0.processed_data,
+        gr1_0.raw_data,
+        gr1_0.recognition_time,
+        gr1_0.updated_at,
+        gr1_0.user_id 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=? 
+    order by
+        gr1_0.recognition_time desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        gr1_0.id,
+        gr1_0.confidence,
+        gr1_0.created_at,
+        gr1_0.device_id,
+        gr1_0.gesture_name,
+        gr1_0.processed_data,
+        gr1_0.raw_data,
+        gr1_0.recognition_time,
+        gr1_0.updated_at,
+        gr1_0.user_id 
+    from
+        gesture_results gr1_0 
+    where
+        gr1_0.user_id=? 
+    order by
+        gr1_0.recognition_time desc 
+    limit
+        ?, ?
+2025-07-12 14:16:59 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-12 14:16:59 - Writing [com.dataglove.web.common.ApiResponse@34dd193d]
+2025-07-12 14:16:59 - Completed 200 OK
+2025-07-12 14:16:59 - Securing GET /v1/devices/my-devices
+2025-07-12 14:16:59 - 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.real_name,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-12 14:16:59 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.role_name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-07-12 14:16:59 - Secured GET /v1/devices/my-devices
+2025-07-12 14:16:59 - GET "/api/v1/devices/my-devices", parameters={}
+2025-07-12 14:16:59 - Mapped to com.dataglove.web.controller.DeviceController#getMyDevices(UserPrincipal)
+2025-07-12 14:16:59 - 
+    select
+        ud1_0.id,
+        ud1_0.bind_time,
+        ud1_0.created_at,
+        ud1_0.device_id,
+        ud1_0.is_active,
+        ud1_0.unbind_time,
+        ud1_0.updated_at,
+        ud1_0.user_id 
+    from
+        user_devices ud1_0 
+    where
+        ud1_0.user_id=? 
+        and ud1_0.is_active=1
+Hibernate: 
+    select
+        ud1_0.id,
+        ud1_0.bind_time,
+        ud1_0.created_at,
+        ud1_0.device_id,
+        ud1_0.is_active,
+        ud1_0.unbind_time,
+        ud1_0.updated_at,
+        ud1_0.user_id 
+    from
+        user_devices ud1_0 
+    where
+        ud1_0.user_id=? 
+        and ud1_0.is_active=1
+2025-07-12 14:16:59 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-12 14:16:59 - Writing [com.dataglove.web.common.ApiResponse@1efbd5d8]
+2025-07-12 14:16:59 - Completed 200 OK
